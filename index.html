@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b3928">
+<meta name="description" content="Wedding invitation for Veeral & Tina — 1st & 2nd December 2026, Greater Noida.">
+<title>Veeral & Tina — Wedding Invitation</title>
+<style>
+:root{
+  --green:#083a28; --green2:#0d4a34; --cream:#fff2e9; --pink:#f7d7cf;
+  --gold:#d8b46a; --gold2:#f1d79b; --ink:#40271f; --muted:#7c5e55;
+  --white:#fffaf7; --shadow:0 20px 60px rgba(0,0,0,.16);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#10261e;color:var(--ink);font-family:Georgia,"Times New Roman",serif}
+button,a{font:inherit}
+a{color:inherit;text-decoration:none}
+.page{max-width:560px;margin:0 auto;background:var(--cream);overflow:hidden;box-shadow:0 0 60px rgba(0,0,0,.35)}
+section{position:relative;padding:58px 24px;overflow:hidden}
+.dark{background:var(--green);color:#fff4dc}
+.ornament{position:absolute;inset:0;pointer-events:none;opacity:.85}
+.ornament:before,.ornament:after{content:"";position:absolute;width:180px;height:180px;border:1px solid rgba(216,180,106,.35);border-radius:50%}
+.ornament:before{top:-90px;left:-90px}.ornament:after{bottom:-90px;right:-90px}
+.flowers{position:absolute;inset:0;pointer-events:none;background:
+ radial-gradient(circle at 7% 8%,#f3b7ad 0 3px,transparent 4px),
+ radial-gradient(circle at 12% 12%,#f3b7ad 0 4px,transparent 5px),
+ radial-gradient(circle at 94% 7%,#f3b7ad 0 4px,transparent 5px),
+ radial-gradient(circle at 88% 13%,#f3b7ad 0 3px,transparent 4px);
+}
+.kicker{letter-spacing:.28em;text-transform:uppercase;font-size:11px;color:var(--gold2);text-align:center}
+.script{font-family:"Brush Script MT","Segoe Script",cursive;font-weight:400}
+h1,h2,h3,p{position:relative}
+h1{font-size:clamp(48px,14vw,78px);line-height:.9;text-align:center;margin:18px 0;color:var(--gold2);font-weight:500}
+h2{font-size:38px;text-align:center;margin:0 0 18px;color:var(--gold)}
+h3{font-size:21px;margin:0 0 8px}
+.subtitle{text-align:center;line-height:1.8;font-size:14px;letter-spacing:.08em}
+.gold-line{height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:24px auto;max-width:260px}
+.monogram{width:92px;height:92px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;margin:0 auto;color:var(--gold2);font-size:25px;letter-spacing:.1em}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;background:
+ linear-gradient(180deg,rgba(4,35,24,.35),rgba(4,35,24,.9)),
+ url("assets/couple-4.jpeg") center/cover no-repeat}
+.hero-card{width:min(100%,460px);padding:38px 25px;background:rgba(4,43,30,.78);backdrop-filter:blur(4px);border:1px solid rgba(216,180,106,.55);border-radius:120px 120px 22px 22px;box-shadow:var(--shadow)}
+.hero .date{font-size:18px;text-align:center;color:#fff1d0;letter-spacing:.12em;margin-top:26px}
+.scroll{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#fff}
+.photo-frame{padding:10px;border:1px solid var(--gold);background:#fff8ef;box-shadow:var(--shadow);transform:rotate(-1deg)}
+.photo-frame img{display:block;width:100%;height:auto;max-height:620px;object-fit:cover}
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.person{background:rgba(255,255,255,.75);padding:10px;border:1px solid #e4c6bb;border-radius:14px}
+.person img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:9px}
+.person h3{text-align:center;margin-top:12px}
+.person p{text-align:center;font-size:12px;line-height:1.55;color:var(--muted)}
+.story{text-align:center;font-size:17px;line-height:1.8}
+.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:28px}
+.count{border:1px solid rgba(216,180,106,.6);border-radius:12px;padding:14px 5px;text-align:center}
+.count strong{display:block;font-size:27px;color:var(--gold2)}
+.count span{font-size:9px;letter-spacing:.12em;text-transform:uppercase}
+.day-label{text-align:center;letter-spacing:.2em;text-transform:uppercase;font-size:11px;color:#8b6255;margin:34px 0 12px}
+.event-card{background:rgba(255,255,255,.72);border:1px solid #e4c6bb;border-radius:18px;padding:18px;margin:12px 0;box-shadow:0 8px 24px rgba(90,50,40,.06)}
+.event-card .time{color:#8d5d4e;font-size:13px;font-weight:bold;margin:7px 0}
+.event-card .venue{font-size:12px;color:#7d625a}
+.event-icon{font-size:27px;margin-bottom:6px}
+.events-grid{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:500px){.events-grid.three{grid-template-columns:repeat(3,1fr)}}
+.venue-card{background:var(--green);color:#fff0d0;border-radius:28px;padding:28px 20px;box-shadow:var(--shadow);border:1px solid rgba(216,180,106,.4)}
+.venue-name{text-align:center;font-size:27px;color:var(--gold2);margin:8px 0}
+.address{text-align:center;line-height:1.7;font-size:13px;color:#eadfc9}
+.actions{display:flex;gap:8px;margin-top:20px}
+.btn{flex:1;border:1px solid var(--gold);border-radius:999px;padding:12px 10px;text-align:center;color:var(--gold2);background:transparent;cursor:pointer;font-size:12px}
+.btn.primary{background:var(--gold);color:#173729}
+.mapbox{margin-top:18px;border-radius:18px;overflow:hidden;border:1px solid rgba(216,180,106,.5)}
+.mapbox img{display:block;width:100%;height:210px;object-fit:cover;filter:saturate(.85)}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.gallery img{width:100%;aspect-ratio:1/1.18;object-fit:cover;border-radius:14px;border:1px solid #e4c6bb}
+.final{text-align:center;background:
+ radial-gradient(circle at 50% 10%,rgba(216,180,106,.16),transparent 32%),var(--green)}
+.final h2{font-size:43px}
+.final p{color:#f1e5cf;line-height:1.8}
+.rsvp{margin-top:30px;padding:20px;border:1px solid rgba(216,180,106,.5);border-radius:18px}
+.rsvp strong{display:block;color:var(--gold2);font-size:21px;margin:5px}
+.music{position:fixed;right:16px;bottom:16px;z-index:20;width:52px;height:52px;border-radius:50%;border:1px solid var(--gold);background:var(--green);color:var(--gold2);box-shadow:0 8px 30px rgba(0,0,0,.25);cursor:pointer}
+.music.playing{box-shadow:0 0 0 5px rgba(216,180,106,.15),0 8px 30px rgba(0,0,0,.25)}
+.note{font-size:11px;color:#8a6d63;text-align:center;margin-top:12px}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
+.reveal.show{opacity:1;transform:none}
+.smallcaps{letter-spacing:.16em;text-transform:uppercase;font-size:10px}
+</style>
+</head>
+<body>
+<div class="page">
+
+<section class="hero">
+  <div class="hero-card">
+    <div class="monogram">V · T</div>
+    <div class="kicker" style="margin-top:22px">A beautiful journey begins</div>
+    <h1 class="script">Veeral<br>&amp; Tina</h1>
+    <div class="gold-line"></div>
+    <p class="subtitle">TOGETHER WITH OUR FAMILIES<br>WE INVITE YOU TO CELEBRATE<br>OUR HAPPILY EVER AFTER</p>
+    <div class="date">1st – 2nd DECEMBER 2026</div>
+    <p class="subtitle" style="margin-top:12px">GREATER NOIDA · UTTAR PRADESH</p>
+  </div>
+  <div class="scroll">Scroll to explore ↓</div>
+</section>
+
+<section class="reveal">
+  <div class="flowers"></div>
+  <div class="kicker">Save the dates</div>
+  <h2 class="script">Two hearts, one journey</h2>
+  <p class="story">Different stories, one beautiful beginning. Join us as Veeral and Tina celebrate love, family, laughter and the start of a new chapter together.</p>
+  <div class="gold-line"></div>
+  <div class="photo-frame"><img src="assets/couple-5.jpeg" alt="Veeral and Tina"></div>
+</section>
+
+<section class="dark reveal">
+  <div class="ornament"></div>
+  <div class="kicker">Counting down</div>
+  <h2 class="script">Until our wedding day</h2>
+  <div class="countdown">
+    <div class="count"><strong id="days">--</strong><span>Days</span></div>
+    <div class="count"><strong id="hours">--</strong><span>Hours</span></div>
+    <div class="count"><strong id="minutes">--</strong><span>Minutes</span></div>
+    <div class="count"><strong id="seconds">--</strong><span>Seconds</span></div>
+  </div>
+  <p class="note" style="color:#d9cdb7">Countdown runs to 2 December 2026, the wedding day.</p>
+</section>
+
+<section class="reveal">
+  <div class="kicker">The couple</div>
+  <h2 class="script">Meet Veeral &amp; Tina</h2>
+  <div class="intro-grid">
+    <article class="person">
+      <img src="assets/couple-2.jpeg" alt="Veeral">
+      <h3>Veeral Sharma</h3>
+      <p>Son of<br>Mr. Manish Sharma<br>&amp; Mrs. Rekha Sharma</p>
+    </article>
+    <article class="person">
+      <img src="assets/couple-1.jpeg" alt="Tina">
+      <h3>Tina Sharma</h3>
+      <p>Daughter of<br><em>[Bride's Father]</em><br>&amp; <em>[Bride's Mother]</em></p>
+    </article>
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="kicker">The celebration</div>
+  <h2 class="script">A weekend of love</h2>
+  <p class="story">Come celebrate every beautiful ritual, every dance, every meal and every memory with us.</p>
+
+  <div class="day-label">1st December 2026 · Day Functions</div>
+  <div class="events-grid three">
+    <article class="event-card">
+      <div class="event-icon">💍</div><h3>Sagai</h3>
+      <div class="time">9:00 AM onwards</div><div class="venue">Rosette Hall</div>
+    </article>
+    <article class="event-card">
+      <div class="event-icon">🍽️</div><h3>Lunch</h3>
+      <div class="time">1:15 PM onwards</div><div class="venue">Rosette Hall</div>
+    </article>
+    <article class="event-card">
+      <div class="event-icon">🌼</div><h3>Haldi &amp; Mehendi</h3>
+      <div class="time">1:30 PM onwards</div><div class="venue">Rosette Hall</div>
+    </article>
+  </div>
+
+  <div class="day-label">1st December 2026 · Evening</div>
+  <article class="event-card">
+    <div class="event-icon">💃</div><h3>Sangeet</h3>
+    <div class="time">6:30 PM onwards</div><div class="venue">Club Noir</div>
+  </article>
+
+  <div class="day-label">2nd December 2026 · Wedding Day</div>
+  <div class="events-grid three">
+    <article class="event-card"><div class="event-icon">🐎</div><h3>Ghurchari</h3><div class="time">4:00 PM</div><div class="venue">Miraya Crown Hotel Entrance</div></article>
+    <article class="event-card"><div class="event-icon">🥁</div><h3>Chadhat</h3><div class="time">5:30 PM</div><div class="venue">Miraya Crown Hotel Entrance</div></article>
+    <article class="event-card"><div class="event-icon">🎺</div><h3>Baraat</h3><div class="time">8:00 PM</div><div class="venue">Miraya Crown Hotel Entrance</div></article>
+  </div>
+
+  <div class="day-label">Celeste Hall</div>
+  <article class="event-card">
+    <div class="event-icon">🪷</div>
+    <h3>Wedding Ceremony</h3>
+    <div class="time">Pheras / Muhurat — To be updated</div>
+    <div class="venue">Celeste Hall</div>
+  </article>
+  <article class="event-card">
+    <div class="event-icon">🍽️</div><h3>Dinner</h3>
+    <div class="time">8:00 PM onwards</div><div class="venue">Celeste Hall</div>
+  </article>
+</section>
+
+<section class="dark reveal">
+  <div class="kicker">A few memories</div>
+  <h2 class="script">Better together</h2>
+  <div class="gallery">
+    <img src="assets/couple-3.jpeg" alt="Veeral and Tina">
+    <img src="assets/couple-6.jpeg" alt="Veeral and Tina">
+    <img src="assets/couple-4.jpeg" alt="Veeral and Tina">
+    <img src="assets/couple-5.jpeg" alt="Veeral and Tina">
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="kicker">Find us</div>
+  <h2 class="script">The venue</h2>
+  <div class="venue-card">
+    <div class="smallcaps" style="text-align:center;color:#d9cdb7">Wedding venue</div>
+    <div class="venue-name">Miraya Crown Banquet</div>
+    <p class="address">PKS Town Central, Sec 16B Road,<br>Greater Noida West, Uttar Pradesh – 201308</p>
+    <div class="actions">
+      <a class="btn primary" href="https://maps.app.goo.gl/Ef64K62aVrKzBbAX8?g_st=ic" target="_blank" rel="noopener">📍 Get Directions</a>
+      <a class="btn" href="tel:+917017710317">📞 Call RSVP</a>
+    </div>
+  </div>
+</section>
+
+<section class="final reveal">
+  <div class="flowers"></div>
+  <div class="kicker">Come bless our beginning</div>
+  <h2 class="script">Your presence is our greatest gift</h2>
+  <p>Your love, blessings and presence will make our celebration even more special. We can't wait to celebrate this beautiful new chapter with our favourite people.</p>
+  <div class="gold-line"></div>
+  <div class="script" style="font-size:42px;color:var(--gold2)">Veeral &amp; Tina</div>
+  <p class="smallcaps">1st – 2nd December 2026 · Greater Noida</p>
+  <div class="rsvp">
+    <div class="smallcaps">RSVP</div>
+    <strong>Vaibhav Kumar</strong>
+    <a href="tel:+917017710317">7017710317</a>
+    <div class="actions">
+      <a class="btn primary" href="tel:+917017710317">Call</a>
+      <a class="btn" href="https://wa.me/917017710317?text=Hi%20Vaibhav%2C%20we%20would%20love%20to%20RSVP%20for%20Veeral%20%26%20Tina%27s%20wedding." target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+  <p class="script" style="font-size:25px;color:var(--gold2);margin-top:30px">Let's celebrate, together. ♥</p>
+</section>
+
+</div>
+
+<button class="music" id="musicBtn" aria-label="Play music">♫</button>
+<audio id="music" preload="metadata" loop>
+  <source src="assets/aaj-sajeya.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const weddingDay = new Date("2026-12-02T00:00:00+05:30").getTime();
+function updateCountdown(){
+  const diff = weddingDay - Date.now();
+  const d = Math.max(0, diff);
+  const days = Math.floor(d/86400000);
+  const hours = Math.floor((d%86400000)/3600000);
+  const minutes = Math.floor((d%3600000)/60000);
+  const seconds = Math.floor((d%60000)/1000);
+  document.getElementById("days").textContent=days;
+  document.getElementById("hours").textContent=String(hours).padStart(2,"0");
+  document.getElementById("minutes").textContent=String(minutes).padStart(2,"0");
+  document.getElementById("seconds").textContent=String(seconds).padStart(2,"0");
+}
+updateCountdown(); setInterval(updateCountdown,1000);
+
+const music=document.getElementById("music"), btn=document.getElementById("musicBtn");
+btn.addEventListener("click", async ()=>{
+  if(music.paused){ try{await music.play(); btn.classList.add("playing"); btn.textContent="❚❚";}catch(e){} }
+  else{music.pause(); btn.classList.remove("playing"); btn.textContent="♫";}
+});
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show")})
+},{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
