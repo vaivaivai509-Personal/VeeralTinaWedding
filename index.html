@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#100b12">
+  <meta name="description" content="You're invited to Veeral’s cocktail party. 28 November 2026, 7 PM onwards at Float by duty free. Pop, reveal and celebrate.">
+  <title>Veeral’s Cocktail Party · 28 November 2026</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23100b12'/%3E%3Cpath d='M14 15l18 36 18-36M24 15h16' fill='none' stroke='%23e8c789' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" as="image" href="assets/champagne-bottle.png">
+  <link rel="preload" as="font" type="font/otf" href="assets/fonts/display.otf" crossorigin>
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="is-locked">
+  <svg class="icon-definitions" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+    <symbol id="arrow-down" viewBox="0 0 24 24"><path d="M12 4v16m-6-6 6 6 6-6"/></symbol>
+    <symbol id="arrow-out" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
+    <symbol id="pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+    <symbol id="spark" viewBox="0 0 24 24"><path d="m12 2 2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4Z"/></symbol>
+    <symbol id="power" viewBox="0 0 24 24"><path d="M12 2v10m-5.7-7a9 9 0 1 0 11.4 0"/></symbol>
+    <symbol id="motion" viewBox="0 0 24 24"><path d="M7 5v14M17 5v14"/></symbol>
+  </defs></svg>
+
+  <canvas id="atmosphere" aria-hidden="true"></canvas>
+  <div id="fizz-veil" aria-hidden="true"></div>
+  <canvas id="fizz-canvas" aria-hidden="true"></canvas>
+
+  <section id="opening" class="opening" aria-labelledby="opening-title">
+    <div class="opening-lines" aria-hidden="true"></div>
+    <div class="opening-top"><span class="brand-mark">V</span><span class="eyebrow">An invitation to celebrate</span></div>
+    <div class="opening-copy"><p class="eyebrow">Veeral’s cocktail party</p><h1 id="opening-title">Good nights<br>start with a <em>pop.</em></h1></div>
+    <button id="open-bottle" class="open-bottle" aria-label="Pop the champagne bottle and open Veeral’s invitation with music">
+      <span class="bottle-halo" aria-hidden="true"></span>
+      <span class="bottle-art opening-bottle" aria-hidden="true">
+        <img class="bottle-body" src="assets/champagne-bottle.png" alt="" width="1024" height="1536" fetchpriority="high">
+        <img class="bottle-cork" src="assets/champagne-bottle.png" alt="" width="1024" height="1536">
+        <span class="bottle-personalization"><span class="bottle-monogram">V</span><span class="bottle-small">THE CELEBRATION<br>RESERVE</span></span>
+      </span>
+      <span class="tap-ring" aria-hidden="true"></span>
+      <span class="open-instruction">Tap the bottle to uncork <span>↗</span></span>
+    </button>
+    <p class="opening-note">Turn up the sound. The night is yours.</p>
+  </section>
+
+  <header class="topbar" id="topbar">
+    <a class="wordmark" href="#welcome" aria-label="Veeral’s cocktail party, back to the beginning"><span class="brand-mark">V</span><span>THE COCKTAIL<br>CELEBRATION</span></a>
+    <div class="controls">
+      <button class="control-button" id="motion-toggle" type="button" aria-pressed="true" aria-label="Pause decorative motion"><svg><use href="#motion"/></svg><span id="motion-label">Motion on</span></button>
+      <button class="control-button" id="music-toggle" type="button" aria-pressed="false" aria-label="Play music"><span class="equalizer" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span id="music-label">Sound off</span></button>
+    </div>
+  </header>
+
+  <main class="invitation" id="invitation">
+    <section class="hero scene" id="welcome" aria-labelledby="hero-title">
+      <div class="hero-image" aria-hidden="true"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-beams" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="hero-content">
+        <p class="eyebrow welcome-line">You’re on the guest list</p>
+        <h2 id="hero-title"><span class="host-name">Veeral’s</span><span class="party-title">COCKTAIL<br><span>PARTY</span></span></h2>
+        <div class="hero-rule"><span></span><svg><use href="#spark"/></svg><span></span></div>
+        <p class="hero-line">A toast to the groom.<br>A night for the memories.</p>
+        <p class="hero-location">FLOAT <span>by duty free</span></p>
+      </div>
+      <a class="scroll-cue" href="#the-reveal"><span>Scroll. There’s a surprise.</span><svg><use href="#arrow-down"/></svg></a>
+      <div class="scene-number" aria-hidden="true">01 / THE INVITATION</div>
+    </section>
+
+    <section class="reserve-section scene" id="the-reveal" aria-labelledby="reserve-title">
+      <div class="section-heading reveal"><p class="eyebrow">02 / A little something to open</p><h2 id="reserve-title">The date is<br><em>under wraps.</em></h2><p id="scratch-instruction">Scratch the gold label. Let the good times out.</p></div>
+      <div class="reserve-stage reveal" id="reserve-stage">
+        <div class="reserve-halo" aria-hidden="true"></div>
+        <div class="box-reveal-effects" aria-hidden="true">
+          <div class="box-light-rays"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="box-reveal-rings"><i></i><i></i><i></i></div>
+          <div class="box-reveal-flare"></div>
+        </div>
+        <canvas id="box-splash" class="box-splash" aria-hidden="true"></canvas>
+        <div class="drinks-box box-lid-holder" aria-hidden="true"><img class="box-lid" src="assets/drinks-box.png" alt="" width="1536" height="1024"></div>
+        <div class="bottle-art date-bottle" id="date-bottle" aria-hidden="true">
+          <div class="bottle-display"><img src="assets/champagne-bottle.png" width="1024" height="1536" alt="">
+            <span class="bottle-personalization date-label"><span class="date-day">28</span><span class="date-month">NOVEMBER</span><span class="date-year">2026</span></span>
+          </div>
+        </div>
+        <div class="drinks-box" id="drinks-box">
+          <img class="box-base" src="assets/drinks-box.png" alt="A black and gold champagne gift box" width="1536" height="1024">
+          <span class="case-monogram" aria-hidden="true">V</span>
+          <div class="scratch-area" id="scratch-area"><div class="scratch-under" aria-hidden="true">IT’S A DATE <span>✧</span></div><canvas id="scratch-card" tabindex="0" role="button" aria-label="Scratch to reveal the party date, or press Enter" aria-describedby="scratch-instruction"></canvas></div>
+        </div>
+        <span class="box-spark box-spark-one" aria-hidden="true">✦</span><span class="box-spark box-spark-two" aria-hidden="true">✧</span>
+      </div>
+      <button class="text-button" id="reveal-date" type="button">Or tap here to reveal <span>↗</span></button>
+      <div class="date-reveal" id="date-reveal" aria-hidden="true">
+        <p class="revealed-date" id="revealed-date" role="status">Saturday, 28 November 2026</p>
+        <p class="countdown-caption" id="countdown-caption">The countdown to a very good night</p>
+        <div class="countdown" id="countdown" role="timer" aria-label="Time until Veeral’s cocktail party" aria-live="off"><div><strong id="days">00</strong><span>DAYS</span></div><b aria-hidden="true">:</b><div><strong id="hours">00</strong><span>HOURS</span></div><b aria-hidden="true">:</b><div><strong id="minutes">00</strong><span>MINS</span></div><b aria-hidden="true">:</b><div><strong id="seconds">00</strong><span>SECS</span></div></div>
+        <p class="time-note">7 PM onwards · India Standard Time</p>
+      </div>
+      <p class="chapter-gate-note" id="chapter-gate-note" role="status">Open the box to unlock the rest of the night.</p>
+      <a class="section-next" id="next-details" href="#the-night" aria-label="Continue to the party details" hidden><svg><use href="#arrow-down"/></svg></a>
+    </section>
+
+    <div id="party-chapters" class="party-chapters" hidden>
+    <section class="night-section scene" id="the-night" aria-labelledby="night-title">
+      <div class="night-ambience" aria-hidden="true">
+        <div class="club-backdrop"></div><div class="club-shade"></div>
+        <div class="room-colour-wash"></div>
+        <div class="room-light-clouds"><i></i><i></i><i></i></div>
+        <div class="dance-beams"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="laser-fan"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="disco-dots"></div><div class="dance-crowd"></div>
+        <div class="floor-reflections"></div>
+        <div class="floor-spotlights"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="party-ignition"></div>
+        <canvas id="party-sparkles"></canvas>
+      </div>
+      <div class="details reveal">
+        <p class="eyebrow">03 / The plan for the night</p><h2 id="night-title">Meet us<br><em>after dark.</em></h2>
+        <div class="venue"><p class="eyebrow">THE VENUE</p><h3>Float</h3><p class="venue-sub">by duty free</p></div>
+        <div class="event-meta"><div><span>WHEN</span><strong>28 November 2026</strong><p>Saturday</p></div><div><span>TIME</span><strong>7 PM onwards</strong><p>Let the evening unfold</p></div></div>
+        <a class="gold-button" href="https://maps.app.goo.gl/KfVWnc25LSXwSZ4s6?g_st=ic" target="_blank" rel="noopener noreferrer"><svg><use href="#pin"/></svg>Take me to Float<svg><use href="#arrow-out"/></svg></a>
+      </div>
+      <div class="dance-stage" id="dance-stage">
+        <div class="disco-orb" id="disco-orb" aria-hidden="true"><div class="orb-texture"></div><span class="orb-spark">✦</span><span class="orb-spark orb-spark-two">✦</span><span class="orb-aura"></span></div>
+        <div class="dance-control"><p class="eyebrow" id="dance-status">Every good night needs a little disco</p><h3>Shall we <em>dance?</em></h3><button id="lights-toggle" class="lights-toggle" type="button" aria-pressed="false"><span class="power-ring"><svg><use href="#power"/></svg></span><span id="lights-label">Turn on the party lights</span></button><p id="dance-hint">Tap. Sparkle. Own the dance floor.</p></div>
+      </div>
+    </section>
+
+    <section class="dress-section scene" id="dress-code" aria-labelledby="dress-title">
+      <div class="dress-halo" aria-hidden="true"></div>
+      <div class="dress-content reveal"><p class="eyebrow">04 / The dress code</p><h2 id="dress-title">Dressed<br>to <em>dazzle.</em></h2><div class="dress-tag">COCKTAIL CHIC</div><div class="swatches" aria-label="Dress colours: black and gold"><span class="swatch-black"></span><span class="swatch-gold"></span><span class="swatch-sparkle">✧</span></div><p class="dress-palette">Black. Gold.<br><em>A little sparkle.</em></p><p class="dress-description">Sharp suits, cocktail dresses<br>or your favourite evening look.</p><div class="dress-divider"></div><p class="dress-note">Bring the glamour.<br>And shoes that love a dance floor.</p></div>
+    </section>
+
+    <footer class="closing scene" id="cheers">
+      <div class="closing-glow" aria-hidden="true"></div><div class="closing-content reveal"><p class="eyebrow">Good people. Great music. One unforgettable night.</p><h2>Here’s to<br><em>Veeral.</em></h2><svg class="closing-spark" aria-hidden="true"><use href="#spark"/></svg><p class="closing-date">28 . 11 . 2026 <span>·</span> 7 PM onwards</p><p class="closing-venue">Float by duty free</p><p class="closing-message">See you on the dance floor.</p><a class="text-button" href="#the-night">Back to the details <span>↗</span></a></div><span class="end-monogram" aria-hidden="true">V</span>
+    </footer>
+    </div>
+  </main>
+  <audio id="party-music" src="assets/party-music.mp3" preload="metadata" loop></audio>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <noscript><style>.opening,.topbar{display:none!important}.is-locked{overflow:auto}.invitation{opacity:1!important;visibility:visible!important}.js .reveal{opacity:1;transform:none}.date-reveal{opacity:1;visibility:visible}.text-button#reveal-date,.chapter-gate-note{display:none}#party-chapters[hidden]{display:block!important}</style><p class="no-script">Enable JavaScript for the bottle, scratch reveal, music and countdown. Party details and directions are available below.</p></noscript>
+  <script src="script.js"></script>
+</body>
+</html>

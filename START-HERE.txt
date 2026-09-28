@@ -1,0 +1,66 @@
+VEERAL'S COCKTAIL PARTY — UPDATED ANIMATED EDITION
+28 November 2026 · 7 PM onwards
+Float by duty free
+
+OPEN THE INVITATION
+1. Extract this ZIP completely.
+2. Keep index.html, styles.css, script.js and the assets folder together.
+3. Open index.html in a browser on a computer.
+4. Tap/click the champagne bottle to enter and start the music.
+
+TO SHARE WITH GUESTS
+Upload the contents of this folder to your static website host, keeping the
+folder structure intact. Send that page's link to guests. A hosted link opened
+in Safari or Chrome is the easiest way to enjoy it on a phone; a ZIP preview
+inside a messaging or Files app may not run interactive pages.
+
+THE EXPERIENCE
+• Tap the bottle: the cork pops and champagne fizz fills the screen.
+• Scroll to the drinks box. Rub the gold label with a finger or mouse.
+• The box opens with a champagne splash, confetti, gold light bursts and
+  expanding rings. The date bottle springs up and gently floats.
+• Scrolling ends at the second chapter until the box-opening animation
+  finishes. The party details, dress code and closing then unlock.
+• The countdown starts as the date is revealed.
+• The tap-to-reveal alternative also works with a keyboard.
+• The directions button opens the exact Google Maps link you supplied.
+• The venue details and dance floor share one continuous background.
+• The central power button switches on sweeping colour spotlights, laser
+  fans, floor lights, light washes, disco sparkles and a confetti burst.
+  Switching it off clears the moving particles and dims the lighting.
+• Sound and motion controls remain available at the top of the page.
+
+MUSIC
+Your complete, original attached MP3 is included as assets/party-music.mp3.
+It loops and starts after the opening bottle tap, because mobile browsers
+generally require an interaction before playing sound. Use Sound on/off to
+pause or resume it. The track pauses when the page goes into the background.
+
+DRESS CODE
+Cocktail chic — black, gold & a little sparkle.
+
+EDITING
+Guest-facing words, the venue and dress code: index.html
+Colours, spacing and animation styling: styles.css
+Countdown target: EVENT_START near the top of script.js
+The countdown uses 28 November 2026, 7:00 PM, Asia/Kolkata (+05:30).
+If the date changes, update the text in index.html as well as EVENT_START.
+
+FILES
+index.html                 Invitation page
+styles.css                 Responsive layout and animations
+script.js                  Bottle opening, scratch reveal, lights and countdown
+assets/champagne-bottle.png Original generated bottle artwork
+assets/drinks-box.png       Original generated gift-box artwork
+assets/club-night.jpg       Original generated club artwork
+assets/party-music.mp3      Your supplied background track
+assets/fonts/              Included fonts and their licence notices
+
+No installation, account, build command, CDN or external font download is
+needed. The directions link needs an internet connection.
+
+CHECKS
+Local asset references, JavaScript syntax, the supplied music file, and the
+interaction logic, delayed scroll unlock, splash cleanup and party-effect
+controls were checked. Live browser visual QA was unavailable in
+the creation environment, so please open the invitation once before sharing.
